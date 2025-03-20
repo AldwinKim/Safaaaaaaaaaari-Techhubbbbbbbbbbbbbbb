@@ -21,8 +21,8 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include("mainapp.applinks")),
-    path("tourism/",include("tourismapp.applinks"))
+    #path('',include("mainapp.applinks")),
+    path("",include("tourismapp.applinks"))
 ]
 # Serve static and media files during development
 if settings.DEBUG:
