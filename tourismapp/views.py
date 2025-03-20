@@ -50,3 +50,6 @@ def Signout(request):
 
 def randompage(request):
     return redirect("homepage")
+
+def destinationpage(request):
+    return render(request, "destinations.html")
