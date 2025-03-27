@@ -7,7 +7,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth.hashers import make_password
 def homepage ( request ):
     return render(request, "index.html")
-def signinpage( request ):
+def loginpage( request ):
     #return HttpResponse(" <input> ")
     print("You did a"+ request.method)
     if request.method == "POST":
