@@ -53,3 +53,9 @@ def randompage(request):
 
 def destinationpage(request):
     return render(request, "destinations.html")
+
+def culturespage(request):
+    return render(request, "cultures.html")
+
+def aboutpage(request):
+    return render(request, "about.html")
