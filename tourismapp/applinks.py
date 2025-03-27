@@ -1,8 +1,8 @@
-from .views import homepage, logininpage, signuppage, logoutpage, randompage, destinationpage, aboutpage, culturespage
+from .views import homepage, loginpage, signuppage, logoutpage, randompage, destinationpage, aboutpage, culturespage
 from django.urls import path
 urlpatterns = [
     path("", homepage, name="homepage"),
-    path("logininpage/", logininpage, name="logininpage"),
+    path("logininpage/", loginpage, name="logininpage"),
     path("signuppage/", signuppage, name="signuppage"),
     path("logoutpage/", logoutpage, name="logoutpage"),
     path("randompage/", randompage, name="randompage"),
