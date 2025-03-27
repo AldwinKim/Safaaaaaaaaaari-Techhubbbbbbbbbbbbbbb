@@ -48,6 +48,9 @@ def Signout(request):
     logout(request)
     return redirect("signuppage")
 
+def signin(request):
+    return redirect("signinpage")
+
 def randompage(request):
     return redirect("homepage")
 
