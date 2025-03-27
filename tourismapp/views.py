@@ -44,12 +44,9 @@ def signuppage( request ):
         return redirect("signinpage")   
     return render(request, "signup.html")
 
-def Signout(request):
+def logoutpage(request):
     logout(request)
     return redirect("signuppage")
-
-def signin(request):
-    return redirect("signinpage")
 
 def randompage(request):
     return redirect("homepage")
