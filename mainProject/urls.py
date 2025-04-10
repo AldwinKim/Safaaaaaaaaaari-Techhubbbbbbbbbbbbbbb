@@ -24,7 +24,8 @@ from .sitemap import allsitemaps
 urlpatterns = [
     path('admin/', admin.site.urls),
     #path('',include("mainapp.applinks")),
-    path("",include("tourismapp.applinks"))
+    path("",include("tourismapp.applinks")),
+    path("sitemap.xml", sitemap, {"sitemaps":allsitemaps}, name="django.contrib.sitemaps.views.sitemap")
 ]
 # Serve static and media files during development
 if settings.DEBUG:

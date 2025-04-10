@@ -15,7 +15,7 @@ SECRET_KEY = 'django-insecure-ui(6v4%td8ldui-2u+f70w%kg(j+*i5$meb^eim1k7%#d$1!sb
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["safaaaaaaaaaari-techhubbbbbbbbbb-production.up.railway.app"]
+ALLOWED_HOSTS = ["safaaaaaaaaaari-techhubbbbbbbbbb-production.up.railway.app", "127.0.0.1", "ald.baydenevents.com"]
 
 
 # Application definition
@@ -28,8 +28,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     "mainapp.apps.MainappConfig",
+    "django.contrib.sites",
+    "django.contrib.sitemaps",
     "tourismapp.apps.TourismappConfig"
 ]
+SITE_ID = 1
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

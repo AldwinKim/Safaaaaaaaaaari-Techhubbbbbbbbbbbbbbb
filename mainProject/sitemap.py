@@ -1,4 +1,5 @@
 from django.contrib.sitemaps import Sitemap
+from django.urls import reverse
 
 
 class TourismSiteApp(Sitemap):
@@ -6,6 +7,9 @@ class TourismSiteApp(Sitemap):
     priority = 1
 
     def items(self):
-        return ["loginpage", "signuppage", "signoutpage","homepage","randompage","destinationpage","aboutpage","culturespage"]
+        return ["loginpage", "signuppage", "logoutpage","homepage","randompage","destinationspage","aboutpage","culturespage"]
+    
+    def location(self, obj):
+        return reverse(obj)
     
 allsitemaps = { "tourismapplinks":TourismSiteApp}

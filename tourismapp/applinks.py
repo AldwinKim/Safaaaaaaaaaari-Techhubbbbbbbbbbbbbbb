@@ -2,7 +2,7 @@ from .views import homepage, loginpage, signuppage, logoutpage, randompage, dest
 from django.urls import path
 urlpatterns = [
     path("", homepage, name="homepage"),
-    path("logininpage/", loginpage, name="logininpage"),
+    path("logininpage/", loginpage, name="loginpage"),
     path("signuppage/", signuppage, name="signuppage"),
     path("logoutpage/", logoutpage, name="logoutpage"),
     path("randompage/", randompage, name="randompage"),
